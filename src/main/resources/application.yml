@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-center
+  cloud:
+    config:
+      password: counect
+      username: counect
+      server:
+        git:
+          uri: http://172.16.1.200/yan.ma/staging-config.git
+          password: lijing31370
+          username: yan.ma
+          searchPaths: '{profile}'
+server:
+  port: 8888
