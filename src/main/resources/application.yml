@@ -3,8 +3,6 @@ spring:
     name: config
   cloud:
     config:
-      password: counect
-      username: counect
       server:
         git:
           uri: http://172.16.1.200/yan.ma/staging-config.git
