@@ -1,6 +1,6 @@
 spring:
   application:
-    name: config-center
+    name: config
   cloud:
     config:
       password: counect
@@ -10,6 +10,10 @@ spring:
           uri: http://172.16.1.200/yan.ma/staging-config.git
           password: lijing31370
           username: yan.ma
-          searchPaths: '{profile}'
+          force-pull: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/,http://localhost:8082/eureka/
 server:
   port: 8888
