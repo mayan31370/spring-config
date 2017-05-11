@@ -11,6 +11,7 @@ spring:
           password: lijing31370
           username: yan.ma
           force-pull: true
+          search-paths: '{application}','{profiles}'
 eureka:
   client:
     serviceUrl:
