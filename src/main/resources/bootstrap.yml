@@ -1,19 +1,11 @@
 spring:
-  application:
-    name: config
   cloud:
     config:
       server:
         git:
-          uri: http://172.16.1.200/yan.ma/staging-config.git
-          password: lijing31370
-          username: yan.ma
+          uri: ${CONFIG_SERVER_GIT_URI}
+          password: ${CONFIG_SERVER_GIT_PASSWORD}
+          username: ${CONFIG_SERVER_GIT_USERNAME}
           force-pull: true
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://cloud:8761/eureka/
-  instance:
-    instance-id: '[${spring.application.name}]${spring.cloud.client.ipAddress}:${server.port}'
 server:
   port: 8888
