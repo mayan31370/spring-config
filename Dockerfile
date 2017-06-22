@@ -5,4 +5,4 @@ ENV CONFIG_SERVER_GIT_URI repo-url
 ENV CONFIG_SERVER_GIT_PASSWORD password
 ENV CONFIG_SERVER_GIT_USERNAME username
 ENV EUREKA_SERVER_URL eureka-url
-ENTRYPOINT ["java","-jar","/app.jar","-Dspring.profiles.active=docker"]
+ENTRYPOINT ["java","-jar","/app.jar"]
