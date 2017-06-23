@@ -9,8 +9,6 @@ spring:
           password: ${CONFIG_SERVER_GIT_PASSWORD}
           username: ${CONFIG_SERVER_GIT_USERNAME}
           force-pull: true
-server:
-  port: 8080
 eureka:
   client:
     serviceUrl:
