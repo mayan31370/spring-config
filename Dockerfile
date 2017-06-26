@@ -4,5 +4,5 @@ ENV CONFIG_SERVER_GIT_PASSWORD password
 ENV CONFIG_SERVER_GIT_USERNAME username
 ENV EUREKA_SERVER_URL eureka-url
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/app.jar","-Dserver.port=8080","-Deureka.client.serviceUrl.defaultZone=${EUREKA_SERVER_URL}"]
+ENTRYPOINT ["java","-jar","/app.jar","-Dserver.port=8080"]
 ADD target/*.jar app.jar
