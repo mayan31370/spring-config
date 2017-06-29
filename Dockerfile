@@ -1,4 +1,4 @@
-FROM counect_data/openjdk-8-jre-alpine-fixed-timezone
+FROM registry.cn-hangzhou.aliyuncs.com/counect_data/openjdk-8-jre-alpine-fixed-timezone
 ENV CONFIG_SERVER_GIT_URL repo-url
 ENV CONFIG_SERVER_GIT_PASSWORD password
 ENV CONFIG_SERVER_GIT_USERNAME username
