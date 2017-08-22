@@ -9,7 +9,3 @@ spring:
           password: ${CONFIG_SERVER_GIT_PASSWORD}
           username: ${CONFIG_SERVER_GIT_USERNAME}
           force-pull: true
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL}
