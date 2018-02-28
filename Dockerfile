@@ -3,5 +3,5 @@ ENV CONFIG_SERVER_GIT_URL repo-url
 ENV CONFIG_SERVER_GIT_PASSWORD password
 ENV CONFIG_SERVER_GIT_USERNAME username
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","-Dserver.port=8080","/app.jar"]
+ENTRYPOINT ["java","-XX:+UnlockExperimentalVMOptions","-XX:+UseCGroupMemoryLimitForHeap","-jar","-Dserver.port=8080","/app.jar"]
 ADD target/*.jar app.jar
